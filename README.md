@@ -45,7 +45,6 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true
-    // "**/node_modules": true
   },
 
   "emmet.syntaxProfiles": {
