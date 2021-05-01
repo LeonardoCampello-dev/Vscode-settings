@@ -7,24 +7,27 @@
 
 ```json
 {
-  "terminal.integrated.fontSize": 13.5,
-  "terminal.integrated.lineHeight": 23,
+  "terminal.integrated.fontSize": 13,
   "terminal.integrated.automationShell.linux": "fish",
-  "terminal.integrated.shell.linux": "/usr/bin/fish",
-  "terminal.integrated.detectLocale": "auto",
+  "terminal.integrated.shell.linux": "fish",
 
-  "window.zoomLevel": 1.5,
+  "window.zoomLevel": 1,
 
   "workbench.colorTheme": "Omni",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
 
+  "editor.parameterHints.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions.comments": true,
+
   "editor.tabSize": 2,
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 13.5,
-  "editor.lineHeight": 23,
-  "editor.fontFamily": "JetBrains mono",
-  "editor.letterSpacing": 0.5,
+  "editor.letterSpacing": 0.2,
   "editor.fontLigatures": true,
+
+  "editor.formatOnSave": true,
 
   "npm-intellisense.importES6": true,
   "npm-intellisense.importQuotes": "'",
@@ -36,7 +39,8 @@
     ".sequelizerc": "javascript",
     ".stylelintrc": "json",
     ".prettierrc": "json",
-    "*.tsx": "typescriptreact"
+    "*.tsx": "typescriptreact",
+    "*.jsx": "javascriptreact"
   },
 
   "files.exclude": {
@@ -45,6 +49,7 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true
+    // "**/node_modules": true
   },
 
   "emmet.syntaxProfiles": {
@@ -53,7 +58,8 @@
 
   "emmet.includeLanguages": {
     "njk": "html",
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
   },
 
   "javascript.suggest.autoImports": true,
@@ -62,20 +68,20 @@
   "git.enableSmartCommit": true,
 
   "breadcrumbs.enabled": true,
-  "editor.parameterHints.enabled": false,
+
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "editor.minimap.enabled": false,
 
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true
   },
+
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.detectIndentation": false
+    "editor.detectIndentation": true
   },
 
   "[jsonc]": {
@@ -88,12 +94,14 @@
 
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true
   },
 
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true
   },
 
   "[html]": {
@@ -106,6 +114,10 @@
     "editor.tabSize": 2
   },
 
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -113,8 +125,6 @@
   "todo-tree.tree.showScanModeButton": false,
 
   "liveshare.authenticationProvider": "GitHub",
-
-  "diffEditor.ignoreTrimWhitespace": false,
 
   "material-icon-theme.folders.associations": {
     "infra": "app",
@@ -140,6 +150,31 @@
     "_shared": "shared",
     "eslint-config": "tools",
     "kube": "kubernetes"
-  }
+  },
+
+  "errorLens.fontFamily": "Ubuntu",
+  "errorLens.fontSize": "12",
+  "errorLens.delay": 0,
+
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+
+  "label": "Test",
+  "options": {
+    "statusbar": {
+      "hide": true
+    }
+  },
+
+  "resmon.show.battery": false,
+  "resmon.show.cpufreq": false,
+
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+
+  "git.confirmSync": false,
+
+  "diffEditor.ignoreTrimWhitespace": false,
+  "tabnine.experimentalAutoImports": true
 }
 ```
